@@ -1,0 +1,87 @@
+html{
+font-size: 16px;
+}
+
+body{
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.site-container{
+  padding: 0 1.5rem;
+  border: 2px solid blue;
+  max-width: 1024px;
+  margin: auto;
+}
+
+/*Header*/
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  background-color: #ffffff;
+}
+
+header .logo{
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+/*Banner section*/
+
+.banner-section{
+  background-color: #d8d8d8;
+  padding: 2rem 0;
+  border: 2px dotted green;
+}
+
+#banner{
+  display: flex;
+  align-items: center;
+}
+
+.banner-img{
+  border: 2px solid black;
+  width: 60%;
+
+}
+
+#banner img{
+  overflow: hidden;
+  width: 100%;
+}
+
+.banner-cta{
+  border: 2px dotted red;
+  margin-left: 2.5rem;
+}
+
+.banner-cta p{
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 1rem auto;
+}
+
+
+.banner-button{
+  background-color: #4a4a4a;
+  padding: 0.75rem;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1.4;
+}

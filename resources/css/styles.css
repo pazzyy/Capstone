@@ -106,7 +106,7 @@ header nav ul li{
 
 /*Feature section*/
 
-#features{
+.features{
   display: flex;
 }
 
@@ -116,6 +116,7 @@ header nav ul li{
   flex-direction: column;
   max-width: 60%;
   margin-bottom: 3rem;
+  padding: 0 1.5rem;
 }
 
 .main-feature-img{
@@ -156,6 +157,10 @@ header nav ul li{
   padding-top: 1rem;
 }
 
+#lectures{
+  background-color: #d8d8d8;
+}
+
 .feature-info-img img{
   width: 100%;
   overflow: hidden;
@@ -174,6 +179,64 @@ header nav ul li{
   line-height: 1.2;
   color: #4a90e2;
 }
+
+/*Learning section*/
+
+#learning-section{
+  background-color: #d8d8d8;
+  padding: 2rem;
+}
+
+#learning-section h2{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.courses-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.courses-item{
+  max-width: 30%;
+  margin: 0.5rem;
+  background-color: #ffffff;
+}
+
+
+.courses-item img{
+  overflow: hidden;
+  width: 100%;
+}
+
+.courses-item-text{
+  margin: 1rem 1rem 1.5rem 1rem;
+}
+
+.courses-item-text h3{
+  font-size: 1.2rem;
+}
+
+.courses-item-text p{
+  font-weight: 200;
+  margin: 0.5rem 0 1rem 0;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+.courses-item span{
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  display: block;
+  margin: 1rem 0;
+}
+
+
+
+
+
 
 /*Media queries*/
 

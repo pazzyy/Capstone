@@ -22,18 +22,18 @@ h2{
 }
 
 h3{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.2;
 }
 
-.site-container{
-  padding: 0 1.5rem;
-  border: 2px solid blue;
-  margin: auto;
-}
+
 
 /*Header*/
+
+.header-container{
+  padding: 0 1.5rem;
+}
 
 .fixed{
   position: fixed;
@@ -62,9 +62,9 @@ header nav ul li{
 
 /*Banner section*/
 
-#banner{
+.banner{
   background-color: #d8d8d8;
-  padding-top: 4rem;
+  padding: 4rem 1.5rem 0 1.5rem;
 }
 
 .banner-content{
@@ -114,9 +114,10 @@ header nav ul li{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 60%;
+  max-width: 57%;
   margin-bottom: 3rem;
-  padding: 0 1.5rem;
+  padding: 0 0 0 1.5rem;
+  margin-right: 0.5rem;
 }
 
 .main-feature-img{
@@ -138,7 +139,7 @@ header nav ul li{
 }
 
 .secondary-features{
-  margin-left: 1.5rem;
+  margin: 0 0.5rem 0 1rem;
   padding: 2rem 0;
 }
 
@@ -182,12 +183,12 @@ header nav ul li{
 
 /*Learning section*/
 
-#learning-section{
+.learning-section{
   background-color: #d8d8d8;
   padding: 2rem;
 }
 
-#learning-section h2{
+.learning-section h2{
   text-align: center;
   margin-bottom: 1.5rem;
 }
@@ -234,8 +235,69 @@ header nav ul li{
 }
 
 
+/*Thesis section*/
+.thesis{
+}
+
+.thesis-flex{
+  display: flex;
+}
+
+.thesis h2{
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.main-thesis{
+  display: flex;
+  flex-direction: column;
+  max-width: 57%;
+  margin-bottom: 2rem;
+  padding: 0 0 0 1.5rem;
+}
+
+.main-thesis-video video{
+  max-width: 100%;
+}
+
+.main-thesis-text{
+  margin-top: 1.5rem;
+}
+
+.main-thesis-text p{
+  margin-top: 1rem;
+}
 
 
+.snd-thesis-item{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 0.5rem 0 1rem;
+}
+
+#fisma{
+  background-color: #d8d8d8;
+}
+
+.snd-thesis-img{
+  max-width: 35%;
+}
+
+.snd-thesis-img img{
+  width: 100%;
+}
+
+.snd-thesis-text{
+  margin-left: 1rem;
+}
+
+.snd-thesis-text p{
+  margin-top: 1rem;
+  font-weight: 200;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
 
 
 /*Media queries*/

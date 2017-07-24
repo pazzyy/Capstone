@@ -18,13 +18,18 @@
             <img src="./resources/img/ic-logo.svg" alt="logo">
             <p><span>COLMAR</span>ACADEMY</p>
           </div>
-
           <nav>
             <ul class="desktop-menu">
-              <li>On Campus</li>
-              <li>Online</li>
-              <li>For companies</li>
-              <li>Sign in</li>
+              <li><a href="#campus">On Campus</a></li>
+              <li><a href="#online">Online</a></li>
+              <li><a href="#companies">For companies</a></li>
+              <li><a href="#signin">Sign in</a></li>
+            </ul>
+            <ul class="mobile-menu">
+              <li><a href="#campus"><img src="./resources/img/ic-logo.svg" alt="logo icon"></a></li>
+              <li><a href="#campus"><img src="./resources/img/ic-on-campus.svg" alt="campus icon"></a></li>
+              <li><a href="#online"><img src="./resources/img/ic-online.svg" alt="online icon"></a></li>
+              <li><a href="#login"><img src="./resources/img/ic-login.svg" alt="login icon"></a></li>
             </ul>
           </nav>
       </header>
@@ -62,32 +67,35 @@
       <div class="secondary-features">
         <div class="feature-info" id="orientation">
           <div class="feature-info-img">
-            <img src="./resources/img/information-orientation.jpg" alt="orientation image">
+            <img src="./resources/img/information-orientation.jpg" class="feature-desktop" alt="orientation image">
+            <img src="./resources/img/information-orientation-mobile.jpg" class="feature-mobile" alt="orientation image">
           </div>
           <div class="feature-info-text">
             <h3>Orientation date</h3>
             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-            <span>Read more</span>
+            <span><a href="#">Read more</a></span>
           </div>
         </div>
         <div class="feature-info" id="campus">
           <div class="feature-info-img">
-            <img src="./resources/img/information-campus.jpg" alt="campus image">
+            <img src="./resources/img/information-campus.jpg" class="feature-desktop" alt="campus image">
+            <img src="./resources/img/information-campus-mobile.jpg" class="feature-mobile" alt="orientation image">
           </div>
           <div class="feature-info-text">
             <h3>Our campus</h3>
             <p>Find which campus is close by you</p>
-            <span>Read more</span>
+            <span><a href="#">Read more</a></span>
           </div>
         </div>
         <div class="feature-info" id="lectures">
           <div class="feature-info-img">
-            <img src="./resources/img/information-guest-lecture.jpg" alt="Oliver Stack image">
+            <img src="./resources/img/information-guest-lecture.jpg" class="feature-desktop" alt="Oliver Stack image">
+            <img src="./resources/img/information-guest-lecture-mobile.jpg" class="feature-mobile" alt="orientation image">
           </div>
           <div class="feature-info-text">
             <h3>Our guest lecture</h3>
             <p>Join a keynote with Oliver Stack about music in medical treatment</p>
-            <span>Read more</span>
+            <span><a href="#">Read more</a></span>
           </div>
         </div>
       </div>
@@ -98,8 +106,7 @@
     <div class="learning-section">
       <h2>Start learning</h2>
 
-      <div class="courses-wrap">
-
+      <div class="courses-wrap" id="learning-desktop">
         <div class="courses-item" id="software">
           <div class="courses-img">
             <img src="./resources/img/course-software.jpg" alt="computers">
@@ -167,6 +174,14 @@
         </div>
 
       </div>
+
+      <div class="courses-wrap" id="learning-mobile">
+        <h3><a href="#">Software engineering</a></h3>
+        <h3><a href="#">Computer Art</a></h3>
+        <h3><a href="#">Design</a></h3>
+        <h3><a href="#">Business</a></h3>
+        <h3><a href="#">Marketing</a></h3>
+      </div>
     </div>
 
     <!-- Thesis exhibit -->
@@ -208,8 +223,21 @@
           </div>
         </div>
       </div>
-
     </div>
+
+    <div class="line">
+    </div>
+    <footer>
+      <div class="copyright">
+        <span>© 2016 Colmar Academy. All rights reserved.</span>
+      </div>
+      <div class="terms">
+        <span>Terms</span>
+        <span>Privacy</span>
+      </div>
+
+
+    </footer>
 
 
 

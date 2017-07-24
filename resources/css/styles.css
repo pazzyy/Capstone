@@ -6,7 +6,7 @@ body{
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  color: #4a4a4a;
+  color: rgb(51, 51, 51);
 }
 
 h1{
@@ -32,6 +32,11 @@ h3{
 /*Header*/
 
 .header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  background-color: #ffffff;
   padding: 0 1.5rem;
 }
 
@@ -42,22 +47,40 @@ h3{
   height: 4rem;
 }
 
-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 4rem;
-  background-color: #ffffff;
-}
 
 header .logo{
   display: flex;
   align-items: center;
 }
 
-header nav ul li{
-  display: inline-block;
+.logo p{
+  font-weight:300;
+}
+
+.logo span{
+  font-weight: 700;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+.desktop-menu{
+  display: flex;
+}
+
+nav ul li{
   padding-left: 1rem;
+}
+
+nav a{
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+nav a:hover{
+  text-decoration: underline;
+  font-weight:500;
 }
 
 /*Banner section*/
@@ -94,7 +117,6 @@ header nav ul li{
   margin: 1rem auto;
 }
 
-
 .banner-button{
   font-size: 1.2rem;
   background-color: #4a4a4a;
@@ -102,7 +124,15 @@ header nav ul li{
   text-align: center;
   color: #ffffff;
   line-height: 1.4;
+  transition: border-radius 0.5s, font-weight 0.5s;
 }
+
+.banner-button:hover{
+  border-radius: 25px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
 
 /*Feature section*/
 
@@ -143,6 +173,10 @@ header nav ul li{
   padding: 2rem 0;
 }
 
+.feature-mobile{
+  display: none;
+}
+
 .feature-info{
   display: flex;
   align-items: center;
@@ -178,7 +212,16 @@ header nav ul li{
   font-weight: 300;
   font-size: 0.9rem;
   line-height: 1.2;
+}
+
+.feature-info-text a{
+  text-decoration: none;
   color: #4a90e2;
+}
+
+.feature-info-text a:hover{
+  text-decoration: underline;
+  color: #5F9EA0;
 }
 
 /*Learning section*/
@@ -197,8 +240,12 @@ header nav ul li{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
+
+#learning-mobile{
+  display: none;
+}
+
 .courses-item{
   max-width: 30%;
   margin: 0.5rem;
@@ -252,7 +299,7 @@ header nav ul li{
   display: flex;
   flex-direction: column;
   max-width: 57%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding: 0 0 0 1.5rem;
 }
 
@@ -299,6 +346,27 @@ header nav ul li{
   line-height: 1.2;
 }
 
+/*Footer*/
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem 3rem 1.5rem;
+}
+
+.line{
+  border-top: 1px solid rgb(51, 51, 51);
+  border-image: ;
+  width: 98%;
+  margin: auto;
+}
+
+.terms span{
+  padding-left: 0.5rem;
+}
+
+
+
 
 /*Media queries*/
 
@@ -333,8 +401,6 @@ header nav ul li{
     font-size: 1rem;
     line-height: 1.2;
 }
-
-
 }
 
 
@@ -369,4 +435,133 @@ header nav ul li{
     margin: 0.5rem 0 0.5rem 0;
     font-size: 0.75rem;
     line-height: 1;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+
+.logo p,
+.logo img,
+.logo span,
+.desktop-menu,
+.main-feature,
+.feature-desktop,
+#learning-desktop,
+.main-thesis-text,
+.secondary-thesis,
+.terms{
+  display: none;
+}
+
+header .logo{
+  display: none;
+}
+
+
+nav{
+  flex-grow: 1;
+}
+
+nav ul li{
+  padding-right: 1rem;
+}
+
+.mobile-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner{
+  padding: 4rem 0 1.5rem 0;
+}
+
+.banner-content{
+  flex-direction: column;
+}
+
+.banner-img{
+  max-width: 100%;
+  margin: 0;
+}
+
+.banner-cta{
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.banner-button{
+  padding: 0.8rem;
+  max-width: 50%;
+  margin: auto;
+}
+
+.secondary-features{
+  margin: 0 0.5rem;
+  padding: 1rem 0;
+}
+
+.feature-mobile{
+  display: block;
+}
+
+.feature-info{
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.feature-info-img{
+  max-width: 100%;
+  padding: 0 0.5rem;
+}
+
+.feature-info-text{
+  margin: 0.5rem 1rem;
+}
+
+.feature-info-text h3{
+  font-size: 1.2rem;
+}
+
+.feature-info-text p{
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+#lectures{
+  background-color: #ffffff;
+}
+
+.learning-section{
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+}
+
+#learning-mobile{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#learning-mobile a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#learning-mobile a:hover{
+  text-decoration: underline;
+  color: #5F9EA0;
+}
+
+#learning-mobile h3{
+  font-size: 1.3rem;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  background-color: #d8d8d8;
+}
+
+.main-thesis{
+  max-width: 100%;
+  padding: 0;
+}
 }
